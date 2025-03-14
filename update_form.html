@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edit in Database</title>
+</head>
+
+<style>
+      .button {
+        /* margin-left: 10%; */
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+
+      .button:hover {background-color: #3e8e41}
+
+      .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+
+   </style>
+
+<body>
+<!--====form section start====-->
+
+<div class="user-detail">
+    <div class="form-title">
+    <h2>Edit Record</h2>
+    </div>
+    <p style="color:red"></p>
+    <form method="post" action="/update">
+            <label>Student Name : </label>       
+            <input name="name" required style="padding: 12px 20px;  box-sizing: border-box; margin-left:1.4%">
+            <br> <br>
+
+            <label>Age : </label>
+            <input name="age" required style="padding: 12px 20px; box-sizing: border-box; margin-left:5.6%">
+            <br> <br>
+
+            <label>Gender : </label>
+            <input name="gender" required style="padding: 12px 20px; box-sizing: border-box; margin-left:4.3%">
+            <br> <br>
+
+            <label>Caste : </label>
+            <input name="caste" required style="padding: 12px 20px; box-sizing: border-box; margin-left:5%">
+            <br> <br>
+
+            <label>School Name : </label>
+            <input name="school" required style="padding: 12px 20px; box-sizing: border-box; margin-left:1.7%">
+            <br> <br>
+
+            <label>Area : </label>
+            <input name="area" required style="padding: 12px 20px; box-sizing: border-box; margin-left:5.4%">
+            <br> <br>
+        
+            <label>City : </label>
+            <input name="city" required style="padding: 12px 20px; box-sizing: border-box; margin-left:5.7%">
+            <br> <br>
+
+            <label>Description : </label>
+            <input name="desc" required style="padding: 12px 20px; box-sizing: border-box; margin-left:2.5%">
+            <br> <br>
+
+            <button type="submit" name="update" class="button">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
